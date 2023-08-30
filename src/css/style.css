@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    margin: 50px 10%;
+}
+
+.countainer_logo{
+    display: flex;
+    justify-content: start;
+}
+
+.body{
+    background: #674BB2 url("../image/bg-desktop.svg") no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin: 80px auto;
+}
+
+.container_main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_main .illustration img{
+    height: 100%;
+}
+
+.container_main .information{
+    max-width: 520px;
+    color: white;
+    margin-top: 50px;
+}
+
+.container_main .information h1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.container_main .information p{
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+}
+
+.container_main .information a.register{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    width: 190px;
+    padding: 12px 0;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.container_main .information a.register:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.footer{
+    margin: 0px 8%;
+    display: flex;
+    justify-content: end;
+}
+
+.footer .media{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+.footer .media li{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.footer .media li:hover{
+    border-color: hsl(300, 69%, 71%);
+}
+
+.fa-facebook-f{
+    color: white;
+}
+
+li:hover .fa-facebook-f{
+    color: hsl(300, 69%, 71%);
+}
+
+.fa-twitter{
+    color: white;
+}
+
+li:hover .fa-twitter{
+    color: hsl(300, 69%, 71%);
+}
+
+.fa-instagram{
+    color: white;
+}
+
+li:hover .fa-instagram{
+    color: hsl(300, 69%, 71%);
+}
+
+.footer .media li .icon{
+    font-size: 1.8rem;
+}
+
+.footer .media li.face{
+ padding: 10px 13px;
+}
+
+@media(max-width:1300px){
+    .container_main{
+        flex-direction: column;
+        align-items: center;
+        min-width: 450px;
+    }
+
+    .container_main .illustration img{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .container_main .information{
+        text-align: center;
+    }
+
+    .footer{
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:576px){
+    .body{
+        background: #674BB2 url("../image/bg-mobile.svg") no-repeat;
+    }
+}
